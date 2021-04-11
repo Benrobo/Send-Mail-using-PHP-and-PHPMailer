@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
     }
     else {
         // if no error occur send mail
-        $to = "alumonabenaiah71@gmail.com";
+        $to = "reciepient@gmail.com";
         $mail = new PHPMailer(true); 
         $mail->IsSMTP();
         $mail->Mailer = "smtp";
@@ -35,8 +35,8 @@ if(isset($_POST['submit'])){
         $mail->SMTPSecure = "tls";
         $mail->Port       = 587;
         $mail->Host       = "smtp.gmail.com";
-        $mail->Username   = "alumonabenaiah71@gmail.com";
-        $mail->Password   = "benrobo-tut71";
+        $mail->Username   = "your-email@gmail.com";
+        $mail->Password   = "xxxxxxxxx";
         $mail->From = $email;
         $mail->FromName = $name;
         $mail->addAddress($to);
